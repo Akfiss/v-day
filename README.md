@@ -2,7 +2,7 @@
 
 A fun, interactive Valentine's Day page where the "Yes" button grows bigger every time they click "No" — with falling hearts, cute GIFs, music, and playful toast messages. Built with pure HTML, CSS, and JavaScript.
 
-**Live demo:** [akfiss.github.io/valentine-day](https://akfiss.github.io/valentine-day/)
+**Live demo:** [akfiss.github.io/v-day](https://akfiss.github.io/v-day/)
 
 
 ---
@@ -18,7 +18,7 @@ You've got three options — pick whatever works for you.
 No setup needed. Just send this link:
 
 ```
-https://akfiss.github.io/valentine-day
+https://akfiss.github.io/v-day
 ```
 
 That's it. Done. You're welcome.
@@ -30,7 +30,7 @@ That's it. Done. You're welcome.
 Want your own version you can customize? Follow these steps:
 
 #### 1. Fork the Repo
-- Go to [github.com/akfiss/valentine-day](https://github.com/akfiss/valentine-day)
+- Go to [github.com/akfiss/v-day](https://github.com/akfiss/v-day)
 - Click the **Fork** button in the top-right corner
 - This creates a copy of the repo under your GitHub account
 
