@@ -18,7 +18,7 @@ You've got three options — pick whatever works for you.
 No setup needed. Just send this link:
 
 ```
-https://sahilgogna.github.io/v-day
+https://akfiss.github.io/valentine-day
 ```
 
 That's it. Done. You're welcome.
