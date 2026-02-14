@@ -1,36 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Will you be my Valentine? 💕</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="hearts-bg"></div>
-
-    <div class="container">
-        <h1>Will you be my Valentine? 💕</h1>
-
-        <div class="gif-container">
-            <img id="cat-gif" src="https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif" alt="cute character">
-        </div>
-
-        <div class="buttons">
-            <button id="yes-btn" onclick="handleYesClick()">Yes</button>
-            <button id="no-btn" onclick="handleNoClick()">No</button>
-        </div>
-        <div id="tease-toast"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Envelope intro animation -->
+    <div id="envelope-overlay" class="envelope-overlay">
+      <div style="text-align: center">
+        <div id="envelope" class="envelope" onclick="openEnvelope()">💌</div>
+        <p class="envelope-text">Tap to open... 💕</p>
+      </div>
     </div>
 
-    <audio id="bg-music" loop autoplay muted>
-        <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
+    <!-- Background layers -->
+    <div class="emoji-bg" id="emoji-bg"></div>
+    <div class="hearts-bg"></div>
+    <canvas id="sparkle-canvas"></canvas>
+
+    <!-- Cute bear companion -->
+    <div class="bear-companion" id="bear" onclick="bearSpeak()">🧸</div>
+    <div class="bear-speech" id="bear-speech"></div>
+
+    <!-- Main content -->
+    <div class="container" id="main-container" style="display: none">
+      <h1 id="title"></h1>
+
+      <!-- Countdown to Valentine's Day -->
+      <div id="countdown-section"></div>
+
+      <div class="gif-container">
+        <img
+          id="cat-gif"
+          src="https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif"
+          alt="cute character"
+        />
+      </div>
+
+      <div class="buttons">
+        <button id="yes-btn" onclick="handleYesClick()">Yes 💕</button>
+        <button id="no-btn" onclick="handleNoClick()">No</button>
+      </div>
+      <div id="tease-toast"></div>
+    </div>
+
+    <audio id="bg-music" loop>
+      <source
+        src="music/beabadoobee - Glue Song (Lyrics).mp3"
+        type="audio/mpeg"
+      />
     </audio>
 
-    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+    <button
+      id="music-toggle"
+      onclick="toggleMusic()"
+      title="Toggle music"
+      style="display: none"
+    >
+      🔇
+    </button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

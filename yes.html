@@ -1,33 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yay! 🎉</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yay! You said YES! 🎉💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-</head>
-<body>
-    <div class="hearts-bg"></div>
+  </head>
+  <body class="yes-page">
+    <!-- Heart rain background -->
+    <canvas id="heart-rain"></canvas>
+    <div class="emoji-bg" id="emoji-bg"></div>
 
     <div class="container yes-container">
-        <h1 class="yes-title">Knew you would say yes! 🎉</h1>
+      <h1 class="yes-title">Knew you would say yes! 🎉</h1>
 
-        <div class="gif-container">
-            <img id="cat-gif" src="https://media.tenor.com/eNHbizSfVb0AAAAj/lovemode-cute.gif" alt="celebrating">
+      <div class="gif-container">
+        <img
+          id="cat-gif"
+          src="https://media.tenor.com/eNHbizSfVb0AAAAj/lovemode-cute.gif"
+          alt="celebrating"
+        />
+      </div>
+
+      <p class="yes-message">You just made me the happiest person! 💕</p>
+
+      <!-- Sequential love messages -->
+      <div class="love-messages" id="love-messages">
+        <div class="love-msg">Thank you for saying yes! 🌹</div>
+        <div class="love-msg">
+          You are the most beautiful thing in my life 💫
         </div>
-
-        <p class="yes-message">You just made me the happiest person! 💕</p>
+        <div class="love-msg">Every moment with you is magical ✨</div>
+        <div class="love-msg">I promise to make you smile every day 🥰</div>
+        <div class="love-msg">Happy Valentine's Day, my love! 💝</div>
+      </div>
     </div>
 
     <audio id="bg-music" loop>
-        <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
+      <source
+        src="music/beabadoobee - Glue Song (Lyrics).mp3"
+        type="audio/mpeg"
+      />
     </audio>
 
-    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">
+      🔊
+    </button>
 
     <script src="yes-script.js"></script>
-</body>
+  </body>
 </html>
